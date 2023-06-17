@@ -5,23 +5,28 @@ import java.util.ArrayList;
 public class ParkingLot extends BaseModel{
 
     private ArrayList<ParkingFloor> floors;
-    private ArrayList<Gate> gates;
+    private ArrayList<EntryGate> entryGates;
+    private ArrayList<ExitGate> exitGates;
     private String address;
 
     public void setFloors(ArrayList<ParkingFloor> floors) {
         this.floors = floors;
     }
 
-    public void setGates(ArrayList<Gate> gates) {
-        this.gates = gates;
+    public void setEntryGates(ArrayList<EntryGate> gates) {
+        this.entryGates = gates;
     }
 
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public ArrayList<Gate> getGates() {
-        return gates;
+    public void setExitGates(ArrayList<ExitGate> exitGates) {
+        this.exitGates = exitGates;
+    }
+
+    public ArrayList<EntryGate> getEntryGates() {
+        return entryGates;
     }
 
     public ArrayList<ParkingFloor> getFloors() {
@@ -30,5 +35,9 @@ public class ParkingLot extends BaseModel{
 
     public String getAddress() {
         return address;
+    }
+
+    public ArrayList<ExitGate> getExitGates() {
+        return exitGates;
     }
 }

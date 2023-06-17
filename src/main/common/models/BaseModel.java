@@ -1,6 +1,6 @@
 package main.common.models;
 
-public class BaseModel {
+public abstract class BaseModel {
     private long id;
 
     public void setId(long id) {
